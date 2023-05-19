@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Time Conversion Machine</title>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<style type="text/css">
+	* {
+	text-align: center;
+}
+.center {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.center th {
+	padding: 40px;
+}
+.button{
+	align-self: center;
+}
+.h2{
+	color: grey;
+}
+</style>
+</head>
+<body style="background-image: url(file:///C:/Users/Acer/Desktop/ICT/Fourth%20Quarter/Robot%20Bebe.jpg); background-size: cover; background-repeat: no-repeat; background-position: center; background-attachment: fixed;">>
+	<h1>The "Time Machine"</h1>
+	<br>
+	<br>
+	<br>
+	<br>
+	<h2>Your Current Seconds : 
+	<br>
+	<input type="number" id="operandOne"></h2>
+	<br>
+	<button onclick="S2Minutes();">Minutes</button>
+	<button onclick="S2Hours();">Hours</button>
+	<button onclick="S2Days();">Days</button>
+	<br>
+	<br>
+<!--  -->
+	<h2>Your Current Minutes : 
+	<br>
+	<input type="number" id="operandOne"></h2>
+	<br>
+	<button onclick="M2Seconds();">Seconds</button>
+	<button onclick="M2Hours();">Hours</button>
+	<button onclick="M2Days();">Days</button>
+	<br>
+	<br>
+	<!--  -->
+	<h2>Your Current Hours : 
+	<br>
+	<input type="number" id="operandOne"></h2>
+	<br>
+	<button onclick="H2Seconds();">Seconds</button>
+	<button onclick="H2Minutes();">Minutes</button>
+	<button onclick="H2Days();">Days</button>
+	<br>
+	<br>
+	<!--  -->
+	<h2>Your Current Days : 
+	<br>
+	<input type="number" id="operandOne"></h2>
+	<br>
+	<button onclick="D2Seconds();">Seconds</button>
+	<button onclick="D2Minutes();">Minutes</button>
+	<button onclick="D2Hours();">Hours</button>
+<script type="text/javascript">
+	function S2Minutes(){
+		let a = (document.getElementById("operandOne").value);
+		b = 60;
+		alert(a / b);
+	}
+	function S2Hours(){
+		let a = (document.getElementById("operandOne").value);
+		b = 3600;
+		alert(a / b);
+	}
+	function S2Days(){
+		let a = (document.getElementById("operandOne").value);
+		b = 86400;
+		alert(a / b);
+	}
+	function M2Seconds(){
+		let a = (document.getElementById("operandOne").value);
+		b = 60;
+		alert(a * b);
+	}
+	function M2Hours(){
+		let a = (document.getElementById("operandOne").value);
+		b = 60;
+		alert(a / b);
+	}
+	function M2Days(){
+		let a = (document.getElementById("operandOne").value);
+		b = 1440;
+		alert(a / b);
+	}
+	function H2Seconds(){
+		let a = (document.getElementById("operandOne").value);
+		b = 3600;
+		alert(a * b);
+	}
+	function H2Minutes(){
+		let a = (document.getElementById("operandOne").value);
+		b = 60;
+		alert(a * b);
+	}
+	function H2Days(){
+		let a = (document.getElementById("operandOne").value);
+		b = 24;
+		alert(a / b);
+	}
+	function D2Seconds(){
+		let a = (document.getElementById("operandOne").value);
+		b = 86400;
+		alert(a * b);
+	}
+	function D2Minutes(){
+		let a = (document.getElementById("operandOne").value);
+		b = 1440;
+		alert(a * b);
+	}
+	function D2Hours(){
+		let a = (document.getElementById("operandOne").value);
+		b = 24;
+		alert(a * b);
+	}
+</script>
+</body>
+</html>
